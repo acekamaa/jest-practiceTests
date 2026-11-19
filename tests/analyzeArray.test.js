@@ -1,0 +1,13 @@
+import { analyzeArray } from '../src/analyzeArray';
+
+test('takes an array of numbers and returns an object', () => {
+  const myNum = [1, 8, 3, 4, 2, 6];
+
+  const result = analyzeArray(myNum);
+  expect(result).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
